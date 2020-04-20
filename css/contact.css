@@ -1,11 +1,7 @@
 form { 
-  max-width: 500px;
-  margin: 100px auto;
+  max-width: 500px; 
+  margin: 100px auto; 
 }
-
-
-
-
 
 .feedback-input {
   color:white;
@@ -21,7 +17,6 @@ form {
   box-sizing: border-box;
   outline:0;
 }
-
 .feedback-input:focus {
   border:2px solid #800020; 
 }
@@ -47,5 +42,5 @@ textarea {
 }
 
 [type="submit"]:hover { 
-  background:#753445;
+  background:#753445; 
 }
