@@ -1,0 +1,264 @@
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: #800020;
+}
+
+h1.odd {
+  text-shadow: -1px -1px 0 #ffffff,
+  1px -1px 0 #ffffff,
+  -1px 1px 0 #ffffff,
+  1px 1px 0 #ffffff;
+}
+
+h1.even {
+  text-shadow: -1px -1px 0 #000000,
+  1px -1px 0 #000000,
+  -1px 1px 0 #000000,
+  1px 1px 0 #000000;
+}
+
+
+a.nav-link.active, a.nav-link:hover {
+  color: grey;
+}
+
+/* Preloader */
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background-image: url('../img/website-logo.gif');
+  background-repeat: no-repeat; 
+  background-color: #000000;
+  background-position: center;
+}
+
+.overlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+  background-repeat: no-repeat; 
+  background-color: #000000;
+  background-position: center;
+}
+
+/* Landing page*/
+#landing {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/landing-background.jpeg");
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
+}
+
+.landing-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landing-intro {
+  font-weight: 500;
+}
+
+.landing-name {
+  font-weight: 700;
+}
+
+.landing-title {
+  font-weight: 500;
+}
+
+.logo {
+  width: 50px;
+  background: transparent;
+  margin-right: 20px;
+}
+
+/* Contact icons */
+.contact-icon{
+  font-size:48px;
+  color:white;
+  padding: 0.7vw;
+  padding-top: 2vw;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.contact-icon:hover{
+  -webkit-transform: scale(1.4);
+}
+
+/* Item content */
+.item-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+}
+
+.item-content.odd {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.item-content.even {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.page-header {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-header-item {
+  display: flex;
+  align-items: center;
+}
+
+/* About */
+.me {
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+border: solid 2px #ffffff;
+padding: 10px;
+width: 300px;
+}
+
+.me:hover {
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+#about .row {
+  margin-top: 50px;
+  display: flex;
+}
+
+#about .row .col-sm-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text {
+  margin-top: 20px;
+}
+
+.resume-button {
+  width: 100%;
+  background:#800020;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:16px;
+  transition: all 0.3s;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.resume-button:hover { 
+  background:#753445; 
+  text-decoration: none;
+  color: white;
+}
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 767px) {
+  .preloader {
+      background-size: 320px 162px;
+  }
+
+  body {
+      font-size: 13px;
+  }
+
+  .landing-content {
+      margin-left: 20px;
+  }
+
+  .landing-intro {
+      font-size: 20px;
+  }
+  
+  .landing-name {
+      font-size: 50px;
+  }
+  
+  .landing-title {
+      font-size: 25px;
+  }
+}
+
+/* Medium devices (landscape tablets) */
+@media only screen and (min-width: 768px) {
+  .preloader {
+      background-size: 600px 305px;
+  }
+
+  .body {
+      font-size: 13px;
+  }
+
+  .landing-content {
+      margin-left: 30vw;
+  }
+
+  .landing-intro {
+      font-size: 20px;
+  }
+  
+  .landing-name {
+      font-size: 60px;
+  }
+  
+  .landing-title {
+      font-size: 35px;
+  }
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (min-width: 992px) {
+  .preloader {
+      background-size: 800px 406px;
+  }
+
+  .body {
+      font-size: 16px;
+  }
+
+  .landing-content {
+      margin-left: 45vw;
+  }
+
+  .landing-intro {
+      font-size: 30px;
+  }
+  
+  .landing-name {
+      font-size: 70px;
+  }
+  
+  .landing-title {
+      font-size: 45px;
+  }
+}

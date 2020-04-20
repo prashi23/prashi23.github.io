@@ -1,66 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="UTF-8">
-  <title>Prashi Doval</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#157878">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/cayman.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <head>
+        <title>Prashi Doval | Master's student</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="0">
+
+        <!-- Preloader -->
+        <div class="overlayer"></div>
+        <div class="preloader"></div>
+
+        <!-- Pages -->
+        <div class="main-content">
+
+            <!-- Landing page -->
+            <div id="landing" class="container-fluid item-content">
+                <div class="landing-content">
+                    <div class="landing-intro">
+                        <p>Hi, I'm</p>
+                    </div>
+                    <div class="landing-name">
+                        <p>Prashi Doval.</p>
+                    </div>
+                    <div class="landing-title">
+                        <p>Enthusiastic and Determined.</p>
+                    </div>
+                    <div class="contact-icons">
+                        <a href="https://www.github.com/prashi23" target="_blank"><i class="fa fa-github contact-icon"></i></a>
+                        <a href="https://www.linkedin.com/in/prashi-doval-939869131/" target="_blank"><i class="fa fa-linkedin-square contact-icon"></i></a>
+                        <a href="mailto:prashidoval23@gmail.com" target="_blank"><i class="fa fa-envelope-square contact-icon"></i></a>
+                        <a href="https://www.twitter.com/prashi_doval" target="_blank"><i class="fa fa-twitter-square contact-icon"></i></a>
+
+                    </div>
+                </div>
+                <div class="start">
+                </div>
+            </div>
 
 
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-sm fixed-top justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" id="home-link" href="#landing">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link odd-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link even-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link odd-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <!-- About page -->
+            <div id="about" class="container-fluid item-content odd">
+                <div class="page-header">
+                    <h1 class="page-header-item odd">ABOUT ME</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                    </div>
+                    <div class="col-sm-3">
+                        <div>
+                            <img src="img/me.jpeg" class="me">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="about-text">
+                            <p>Hi, there!<br> I am a pre-final year masters student pursuing masters in computer applications at Indira Gandhi Delhi Technical University for Women in New Delhi, India.
+                            I love to code sitting with R&B music plugged in, black coffee by my side, a code editor in my front and coming up with intelligent solutions or developing new things that make me happy!
+                            <br><br>
+                            I have contributed production code in R, Python, JavaScript and C++. My interests include open-source software development, distributed systems and all things related to tech.
+                            Through my internship, research experience and numerous side projects, I’ve gained valuable experience effectively and efficiently to design and develop projects from start to finish.
+                            My hobbies include reading science fiction, art, swimming and tennis. Some of my favourites are The Da Vinci Code, Deception Point, Angels and Demons and In Cold Blood.
+                            <br><br>
+                            Currently, I am looking for internships in software development for summer 2020. I am willing to relocate.
+                            For more information about my professional and education history, you can contact me for resume.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    </div>
+                </div>
+            </div>
 
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <!-- Portfolio page -->
+            <div id="portfolio" class="container-fluid item-content even">
+                <div class="page-header">
+                    <h1 class="page-header-item even">PROJECTS</h1>
+                </div>
+                <div class="gallery">
+                    <div class="row justify-content-center web">
+                        <div class="col-md-3">
+                        <a data-toggle="modal" data-target="#ea">
+                            <img class="img-fluid" src="img/projects/ea/ea-landing.png" alt="">
+                        </a>
+                        </div>
+                        <div class="col-md-3">
+                        <a data-toggle="modal" data-target="#graduate-survey">
+                            <img class="img-fluid" src="img/projects/graduate-survey/gs-landing.png" alt="">
+                        </a>
+                        </div>
+                        <div class="col-md-3">
+                        <a data-toggle="modal" data-target="#moodcloud">
+                            <img class="img-fluid" src="img/projects/moodcloud/mc-landing.png" alt="">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mobile">
+                        <div class="col-md-2 col-auto">
+                        <a data-toggle="modal" data-target="#wat">
+                            <img class="img-fluid" src="img/projects/wat/wat-login.png" alt="">
+                        </a>
+                        </div>
+                        <div class="col-md-2 col-auto">
+                        <a data-toggle="modal" data-target="#funky-tasks">
+                            <img class="img-fluid" src="img/projects/funkytasks/funkytasks-signup.png" alt="">
+                        </a>
+                        </div>
+                    </div>
+                </div>
 
-  </head>
+                <!-- OS -->
+                <div class="modal fade" id="ea" role="dialog">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">A mini operating system</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="ea-carousel" class="carousel slide web" data-interval="0" data-ride="carousel">
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#ea-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#ea-carousel" data-slide-to="1"></li>
+                                            </ol>
+                                            <!-- Wrapper for carousel items -->
+                                            <div class="carousel-inner web">
+                                                <div class="carousel-item active">
+                                                    <img src="img/projects/ea/export-to-excel.png" alt="First Slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/projects/ea/export-to-pdf.png" alt="Second Slide">
+                                                </div>
+                                            </div>
+                                            <!-- Carousel controls -->
+                                            <a class="carousel-control-prev" href="#ea-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#ea-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <p><b>For:</b><br>Myself</p>
+                                            <p><b>When:</b><br>July - August 2019</p>
+                                            <p><b>What:</b><br>Implemented boot and kernel.</p>
+                                            <p><b>Tools used:</b><br>Assembly, Qemu, C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="close-button" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <body>
-    <section class="page-header">
-      <img class="circle responsive-img" src="https://miro.medium.com/max/3150/2*4nSg58PXGuAjpkdwJTxsqg.jpeg" width="15%" height="30%"/>
-      <h1 class="project-name"> Prashi Doval </h1>
-      <h2 class="project-tagline">Master's student | Tech Enthusiast | #100DaysOfCode Supporter | Lifelong Learner</h2>
-      <a href="https://github.com/prashi23" class="btn" target="_blank">GitHub</a>
-      <a href="mailto:prashidoval23@gmail.com" class="btn" target="_blank">Email</a>
-      <a href="https://www.linkedin.com/in/prashi-doval-939869131/" class="btn">LinkedIn</a>
-      <a href="https://twitter.com/prashi_doval" class="btn" target="_blank">Twitter</a>
-      <a href="https://prashi23.github.io/resume/" class="btn" target="_blank">Resume</a>
-      <a href="https://google.qwiklabs.com/public_profiles/180576d8-0254-4c30-8f19-73cea9c2840f" class="btn" target="_blank">Google Cloud Platform Quest Leader 2019</a>
-    </section>
+                <!-- Walk and Talk Modal -->
+                <div class="modal fade" id="wat" role="dialog">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Walk and Talk</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="wat-carousel" class="carousel slide mobile" data-interval="0" data-ride="carousel">
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#wat-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#wat-carousel" data-slide-to="1"></li>
+                                            </ol>
+                                            <!-- Wrapper for carousel items -->
+                                            <div class="carousel-inner mobile">
+                                                <div class="carousel-item active">
+                                                    <img src="img/projects/wat/wat-login.png" alt="First Slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/projects/wat/wat-create-event.png" alt="Second Slide">
+                                                </div>
+                                            </div>
+                                            <!-- Carousel controls -->
+                                            <a class="carousel-control-prev" href="#wat-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#wat-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <p><b>For:</b><br>Womxn/hacks2.0</p>
+                                            <p><b>When:</b><br>January 2020</p>
+                                            <p><b>What:</b><br>Built, along with 4 other students, a mobile application that works on both iOS and Andoid platforms. This application brings together women in menopause transition or postmenopause who are interested to try walking as a means to socialize and to alleviate their symptoms</p>
+                                            <p><b>Tools used:</b><br>React Native, React, Redux, Node.js, Sequelize</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="close-button" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<section class="main-content">
-      
-  <h1 id="about">About Me</h1><!----<div id="parent">This is a typewriter effect.<div id="border"></div></div>---->
+                <!-- Research Project -->
+                <div class="modal fade" id="moodcloud" role="dialog">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Genomics Data Analysis</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="mc-carousel" class="carousel slide web" data-interval="0" data-ride="carousel">
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#mc-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#mc-carousel" data-slide-to="1"></li>
+                                            </ol>
+                                            <!-- Wrapper for carousel items -->
+                                            <div class="carousel-inner web">
+                                                <div class="carousel-item active">
+                                                    <img src="img/projects/moodcloud/mc-landing.png" alt="First Slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/projects/moodcloud/mc-pick-mood.png" alt="Second Slide">
+                                                </div>
+                                            </div>
+                                            <!-- Carousel controls -->
+                                            <a class="carousel-control-prev" href="#mc-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#mc-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <p><b>For:</b><br>Research Assistant Project</p>
+                                            <p><b>When:</b><br>January 2019</p>
+                                            <p><b>What:</b><br>Analyzed and organized human DNA Sequences datasets and created sequential pattern mining.
+                                                Implemented models with associated learning algorithms that analyze data used for classification and regression analysis.</p>
+                                            <p><b>Tools used:</b><br>R, Shell Scripting, Python</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="close-button" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <p> Hi, there! </p>
-    <p>I’m a pre-final year Master’s student at IGDTUW Delhi pursuing Masters in Computer Applications.  I love to code sitting with R&B music plugged in, black coffee by my side, a code editor in my front and coming up with intelligent solutions or developing new things that make me happy!
-    <br>Read about my experience in my resume. </p>
-    <p> I have contributed production code in R, Python, JavaScript and C++. My interests include open-source software development, distributed systems and all things related to tech. Through my internship, research experience and numerous side projects, I’ve gained valuable experience effectively and efficiently to design and develop projects from start to finish. </p>
-    <p> My hobbies include reading science fiction, art, swimming and tennis. Some of my favourites are The Da Vinci Code, Deception Point,  Angels and Demons and In Cold Blood. </p>
-    <p> Feel free to reach out!</p>
+                <!-- Rust Browser engine -->
+                <div class="modal fade" id="funky-tasks" role="dialog">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Browser Engine</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="ft-carousel" class="carousel slide mobile" data-interval="0" data-ride="carousel">
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#ft-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#wat-carousel" data-slide-to="1"></li>
+                                            </ol>
+                                            <!-- Wrapper for carousel items -->
+                                            <div class="carousel-inner mobile">
+                                                <div class="carousel-item active">
+                                                    <img src="img/projects/funkytasks/funkytasks-signup.png" alt="First Slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/projects/funkytasks/funkytasks-create-task.png" alt="Second Slide">
+                                                </div>
+                                            </div>
+                                            <!-- Carousel controls -->
+                                            <a class="carousel-control-prev" href="#ft-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#ft-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <p><b>For:</b><br>Learning, I am a curious person interested in low-level development.</p>
+                                            <p><b>When:</b><br>February - April 2018</p>
+                                            <p><b>What:</b><br>Implemented from scratch and includes an HTTP client, an HTML parser, a CSS parser and a Javascript engine to involve in parsing web formats and translating them into rendering engine.</p>
+                                            <p><b>Tools used:</b><br>Rust</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="close-button" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer class="site-footer">
-      <span class="site-footer-owner"></span>
-    </footer>
+                <!-- Graduate Survey Modal -->
+                <div class="modal fade" id="graduate-survey" role="dialog">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Linux Shell</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="gs-carousel" class="carousel slide web" data-interval="0" data-ride="carousel">
+                                            <!-- Carousel indicators -->
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#gs-carousel" data-slide-to="0" class="active"></li>
+                                                <li data-target="#gs-carousel" data-slide-to="1"></li>
+                                            </ol>
+                                            <!-- Wrapper for carousel items -->
+                                            <div class="carousel-inner web">
+                                                <div class="carousel-item active">
+                                                    <img src="img/projects/graduate-survey/gs-landing.png" alt="First Slide">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="img/projects/graduate-survey/gs-tabs.png" alt="Second Slide">
+                                                </div>
+                                            </div>
+                                            <!-- Carousel controls -->
+                                            <a class="carousel-control-prev" href="#gs-carousel" data-slide="prev">
+                                                <span class="carousel-control-prev-icon"></span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#gs-carousel" data-slide="next">
+                                                <span class="carousel-control-next-icon"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div>
+                                            <p><b>For:</b><br>University Project</p>
+                                            <p><b>When:</b><br>July 2019</p>
+                                            <p><b>What:</b><br>A bash like Linux Shell in C with system calls. It includes various functionalities like to name a few,
+                                                commands input, parsing and execution, piping and signal handling.</p>
+                                            <p><b>Tools used:</b><br>C</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="close-button" data-dismiss="modal">CLOSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</section>
-<div class="fixed-action-btn">
-    <a class="btn-floating btn-large waves-effect waves-light red hoverable"
-        href="mailto:prashidoval23@gmail.com?subject=Hi"
-        target="_top">
-        <i class="large material-icons">mail</i>
-    </a>
-</div>
+            <!-- Contact page -->
+            <div id="contact" class="container-fluid item-content odd">   
+                <div class="page-header">
+                    <h1 class="page-header-item odd">GET IN TOUCH</h1>
+                </div>
+                <div>
+                    <form action="https://formspree.io/mvobjywk" method="POST">
+                        <input name="name" type="text" class="feedback-input" placeholder="Your name *" required/>   
+                        <input name="email" type="email" class="feedback-input" placeholder="Your email *" required/>
+                        <textarea name="message" class="feedback-input" placeholder="Your message"></textarea>
+                        <input type="submit" value="SEND"/>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
-
-</body>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="js/preloader.js"></script>
+        <script src="js/navbar-observer.js"></script>
+    </body>
 </html>

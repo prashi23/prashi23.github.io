@@ -1,0 +1,51 @@
+form { 
+  max-width: 500px;
+  margin: 100px auto;
+}
+
+
+
+
+
+.feedback-input {
+  color:white;
+  font-weight:500;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color:transparent;
+  border:2px solid #ffffff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus {
+  border:2px solid #800020; 
+}
+
+textarea {
+  height: 200px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background:#800020;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:16px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+}
+
+[type="submit"]:hover { 
+  background:#753445;
+}
