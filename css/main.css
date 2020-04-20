@@ -162,26 +162,6 @@ width: 300px;
   margin-top: 20px;
 }
 
-.resume-button {
-  width: 100%;
-  background:#800020;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:16px;
-  transition: all 0.3s;
-  padding: 10px;
-  margin-bottom: 20px;
-  text-decoration: none;
-}
-
-.resume-button:hover { 
-  background:#753445; 
-  text-decoration: none;
-  color: white;
-}
-
 /* Extra small devices (phones) */
 @media only screen and (max-width: 767px) {
   .preloader {

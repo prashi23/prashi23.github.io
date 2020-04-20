@@ -1,3 +1,4 @@
+
 var $navbar = $ ( '.navbar' ),
 $landing_link = $ ( '#home-link' ),
 $nav_links = $ ( '.nav-link' )
